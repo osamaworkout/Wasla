@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<title>Blood Donation</title>
+	<link rel="stylesheet" href="css/donate.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".tab_content").hide();
+			$(".tabs li:first").addClass("active").show();
+			$(".tab_content:first").show();
+
+			$(".tabs li").click(function() {
+				$(".tabs li").removeClass("active");
+				$(this).addClass("active");
+				$(".tab_content").hide();
+
+				var activeTab = $(this).find("a").attr("href");
+				$(activeTab).fadeIn();
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navigation-bar">
+        <a class="navbar-brand ml-3" href="">
+            <img src="Images/logo.jpg" width="120px;" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-3" style="background-color: #e0e0e0; border-radius: 30px">
+                <li class="nav-item mx-2 my-1 px-2 active" style="border-radius: 30px">
+                    <a class="nav-link" href="indexaf.html" style="color: black; font-weight: 600">Home<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-2 my-1 px-2" style="border-radius: 30px">
+                    <a class="nav-link" href="medical-history.html" style="color: black; font-weight: 600">Medical History</a>
+                </li>
+                <li class="nav-item mx-2 my-1 px-2" style="border-radius: 30px">
+                    <a class="nav-link" href="Profile.html" style="color: black; font-weight: 600">Profile</a>
+                </li>
+                <li class="nav-item mx-2 my-1 px-2" style="border-radius: 30px">
+                    <a class="nav-link" href="sign-in.html" style="color: black; font-weight: 600">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav><br>
+	<header>
+		<h1>Blood Donation</h1>
+	</header>
+	<div class="tab">
+		<ul class="tabs">
+			<li class="active"><a href="#donate-blood">Donate Blood</a></li>
+			<li><a href="#need-blood">Need Blood</a></li>
+		</ul>
+	</div class="tab">
+	<main>
+		<div id="donate-blood" class="tab_content">
+			<button>Donate Now</button>
+			<section>
+				<h2>Why Donate Blood?</h2>
+				<img src="Images\blood-donation.jpg" alt="Blood Donation">
+				<p>Blood donation is a life-saving act that helps patients in need of blood transfusions. One pint of blood can save up to three lives. By donating blood, you are helping to ensure that blood is available for patients in need, including those undergoing surgeries, cancer treatments, and other medical procedures.</p>
+			</section>
+		</div>
+		<div id="need-blood" class="tab_content">
+			<button>Request Blood</button>
+			<section>
+				<h2>Why Need Blood?</h2>
+				<img src="Images\blood-transfusion.jpg" alt="Blood Transfusion">
+				<p>When a person's body can't produce enough blood on its own or loses too much blood due to an injury or medical condition, a blood transfusion may be needed. Blood transfusions can help increase the amount of oxygen in the body, replace lost blood, and improve overall health. Without enough blood, a person's organs may not function properly, leading to serious health complications or even death.</p>
+			</section>
+		</div>
+	</main>
+</body>
+</html>

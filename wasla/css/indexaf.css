@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: rgb(173, 227, 236);
+    text-align: center !important;
+  }
+  #navigation-bar {
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .fixed {
+    position: fixed !important;
+    top: 0 !important;
+  }
+  .active {
+    background-color: #00c2f3;
+  }
+  
+  .join-us {
+    background-image: url("../Images/\(1\).jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    /* width: 100vh; */
+  }
+  .footer-text {
+    font-family: CenturyGothic;
+  }
+  .row {
+    position: relative;
+  }
+  /*Who are we*/
+  .who-are-we {
+    background-color: rgb(173, 227, 236);
+    text-align: center;
+    padding: 100px 0px;
+  }
+  @media only screen and (max-width: 992px) {
+    .who-are-we {
+      padding: 50px 0px;
+    }
+  }
+  .who-are-we img {
+    width: 100%;
+  }
+  .who-are-we p {
+    font-family: CenturyGothic;
+    color: #f30000;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    p {
+      font-size: 10px;
+      line-height: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  .col-xl-6 {
+    text-align: center;
+  }
+  .who-are-we h2 {
+    border: 2px solid #dd8080;
+    border-radius: 20px;
+    color: #8f0101;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .bordered {
+    border: 2px solid #dd8080;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #8f0101;
+    display: inline-block;
+    font-family: CenturyGothicB;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+  h1,
+  h3 {
+    color: #00c2f3;
+    font-family: CenturyGothicB;
+    margin-top: 10px !important;
+  }
+  h2 {
+    color: #00c2f3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: CenturyGothicB;
+  }
+  p {
+    color: #f30000;
+    font-family: CenturyGothic;
+  }
+  .border {
+    border: 3px solid #dd8080;
+    border-width: 0 1px;
+  }
+  h3 {
+    font-size: 25px !important;
+    margin-top: 10px;
+    color: #a50404;
+  }
+  .what-we-do .container img {
+    height: 200px;
+  }
+  /*GO TO UP BUTTON*/
+  /* #to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #fec223;
+    font-weight: bold;
+    color: #000;
+    size: 20px;
+    display: none;
+    z-index: 100000;
+    border-radius: 25px;
+  } */
+  .fifth {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+/* .fifth ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+} */
+
+.fifth ul li {
+    margin-right: 30px;
+}
+
+.fifth ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.fifth ul li a:hover {
+    color: #999;
+}
+
+.fifth .left {
+    flex: 1;
+}
+
+.fifth .left ul li {
+    display: flex;
+    align-items: center;
+}
+
+.fifth .left ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.fifth .left ul li svg {
+    margin-right: 10px;
+    fill: #fff;
+}
+
+.fifth .left ul li span {
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.fifth .mid {
+    flex: 2;
+}
+
+.fifth .mid ul li {
+    list-style: none;
+}
+
+.fifth .right {
+    flex: 1;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.fifth .right ul li {
+    list-style: none;
+}
+
+.fifth .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fifth .copyright a {
+    color: #fff;
+}
+  

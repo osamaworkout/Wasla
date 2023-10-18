@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/sign-up.css" />
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <form>
+    <h1>Sign Up</h1>
+    <!-- <label for="username">Username:</label> -->
+    <input type="text" id="username" name="username" placeholder="Username" required />
+    <br />
+    <input type="tel" id="phone-number" name="phone-number" required placeholder="phone-number" />
+    <br />
+    <input type="email" id="email" name="email" required placeholder="Email" />
+    <br />
+    <input type="date" id="place-of-birth" name="place-of-birth" required placeholder="Place-of-birth" />
+    <br />
+    <input type="text" id="national-id" name="national-id" required placeholder="National-id" />
+    <br />
+    <input type="text" id="job" name="job" required placeholder="Job" />
+    <br />
+    <label for="sex">Sex:</label>
+    <input type="radio" id="male" name="sex" value="male" required />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="sex" value="female" required />
+    <label for="female">Female</label>
+    <br />
+    <br />
+    <label for="marital-status">Marital Status:</label>
+    <select id="marital-status" name="marital-status" required>
+      <option value="" disabled selected>Select</option>
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+      <option value="divorced">Divorced</option>
+      <option value="widowed">Widowed</option>
+    </select>
+    <br />
+    <label for="Purpose">Purpose:</label>
+    <select id="purpose" name="purpose" required>
+      <option value="" disabled selected>Select</option>
+      <option value="patient">citizen</option>
+      <option value="blood donor">Doctor</option>
+      <option value="blood needed">Lab</option>
+    </select>
+    <br />
+    <input type="password" id="password" name="password" required placeholder="Password" />
+    <br />
+    <!-- <label for="confirm-password">Confirm Password:</label> -->
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+    <br />
+    <input type="submit" value="Sign Up" />
+  </form>
+</body>
+
+</html>
